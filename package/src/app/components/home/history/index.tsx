@@ -12,20 +12,21 @@ export default function History() {
           data-aos="fade-right"
         >
           <p className="text-4xl text-midnight_text dark:text-white mb-8 font-bold">
-            Property History <br />
-            How we became number one
+            Your Real Estate Journey <br />
+            Starts Here
           </p>
           <p className="mb-8 pb-2 text-gray">
-            Letraset sheets containing Lorem Ipsum passages and more recently
-            with desktop publishing. Various versions have evolved over the
-            years, sometimes by accident, sometimes as necessary making release
-            of Letraset sheets containing Lorem Ipsum passages.
+            With years of experience and a deep understanding of the local market,
+            I'm committed to providing personalized service that makes your real estate
+            experience smooth and successful. Whether you're buying your first home,
+            selling a property, or looking for investment opportunities, I bring the
+            expertise and dedication you need to achieve your goals.
           </p>
           <Link
-            href="/properties/properties-list"
+            href="/about"
             className="text-xl px-9 py-3 border border-primary text-primary hover:text-white hover:bg-primary rounded-lg"
           >
-            More Details
+            Learn More About Me
           </Link>
         </div>
         <div
@@ -34,7 +35,7 @@ export default function History() {
         >
           <div className="bg-white dark:bg-darklight dark:text-white p-4 max-w-60 border-4 border-primary rounded-lg">
             <p className="mb-16 text-3xl text-midnight_text dark:text-white font-bold">
-              BEST REAL ESTATE COMPANY
+              YOUR TRUSTED REAL ESTATE PARTNER
             </p>
             <div className="flex justify-between">
               <div>
@@ -42,7 +43,7 @@ export default function History() {
                   Years Experience
                 </p>
                 <p className="text-[65px] leading-[1.2] -mt-1 text-midnight_text dark:text-white font-bold mb-2">
-                  33
+                  15+
                 </p>
               </div>
               <div>

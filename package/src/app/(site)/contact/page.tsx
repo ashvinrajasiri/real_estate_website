@@ -1,30 +1,23 @@
 
 import React from "react";
 import { Metadata } from "next";
-import HeroSub from "@/app/components/shared/hero-sub";
 import ContactInfo from "@/app/components/contact/contact-info";
 import ContactForm from "@/app/components/contact/form";
-import Location from "@/app/components/contact/office-location";
+
 export const metadata: Metadata = {
-  title: "Contact | Property-pro",
+  title: "Contact Rajasiri Sinnarajah | Toronto Real Estate Agent",
+  description: "Get in touch with Rajasiri Sinnarajah for all your real estate needs in the Greater Toronto Area. Schedule a consultation today.",
 };
 
 const page = () => {
-  const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/contact", text: "Contact" },
-  ];
   return (
-    <>
-      <HeroSub
-        title="Contact Us"
-        description="Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
-        breadcrumbLinks={breadcrumbLinks}
-      />
-      <ContactInfo />
+    <main className="bg-white dark:bg-darkmode pt-32">
+      {/* Contact Form Section - Above the fold */}
       <ContactForm />
-      <Location />
-    </>
+
+      {/* Contact Info Section - Below the form */}
+      <ContactInfo />
+    </main>
   );
 };
 

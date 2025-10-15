@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 const headerData = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   {
     label: "Properties",
     href: "#",
@@ -19,7 +20,6 @@ const headerData = [
     ],
   },
   { label: "Contact", href: "/contact" },
-  { label: "Documentation", href: "/documentation" },
 ];
 
 export const GET = async () => {
