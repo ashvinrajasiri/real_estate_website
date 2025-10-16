@@ -62,8 +62,8 @@ const ContactForm = () => {
     <>
       <section className="dark:bg-darkmode lg:pb-24 pb-16 px-4">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
-          <div className="grid md:grid-cols-12 grid-cols-1 gap-8 items-center">  
-            <div className="col-span-6">
+          <div className="grid md:grid-cols-12 grid-cols-1 gap-8 items-center">
+            <div className="col-span-6" data-aos="fade-right">
               <h2 className="max-w-72 text-[40px] leading-[1.2] font-bold mb-9 text-midnight_text dark:text-white">Schedule a Consultation</h2>
               <p className="text-gray text-lg mb-6">Ready to find your dream home? Fill out the form below and I'll get back to you as soon as possible.</p>
               <form onSubmit={handleSubmit} className="flex flex-wrap w-full m-auto justify-between">
@@ -154,7 +154,7 @@ const ContactForm = () => {
                 </div>
               </form>
             </div>
-            <div className="col-span-6 h-[600px]">
+            <div className="col-span-6 h-[600px]" data-aos="fade-left">
               <Image
                 src="/images/contact-page/contact.jpg"
                 alt="Contact"
