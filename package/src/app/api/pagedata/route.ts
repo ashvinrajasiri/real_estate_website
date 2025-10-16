@@ -13,20 +13,20 @@ const features = [
     {
         id: 1,
         imgSrc: "/images/features/rating.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "15+ Years of Experience",
+        description: "Proven track record helping families find their perfect home in the GTA with deep market knowledge and expertise"
     },
     {
         id: 2,
         imgSrc: "/images/features/Give-Women's-Rights.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "Local Market Expert",
+        description: "Intimate knowledge of Toronto neighborhoods, pricing trends, and hidden gems that help you make informed decisions"
     },
     {
         id: 3,
         imgSrc: "/images/features/live-chat.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "Personalized Service",
+        description: "Every client receives dedicated attention and a customized strategy tailored to their unique goals and budget"
     }
 ];
 
