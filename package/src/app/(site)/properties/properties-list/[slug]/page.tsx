@@ -7,6 +7,7 @@ import Availability from '@/app/components/property-details/availability';
 import Tabbar from '@/app/components/property-details/tabbar';
 import TextSection from '@/app/components/property-details/text-section';
 import DiscoverProperties from '@/app/components/home/property-option';
+import MortgageCalculator from '@/app/components/property-details/mortgage-calculator';
 
 
 export default function Details() {
@@ -56,6 +57,7 @@ export default function Details() {
           </div>
         </div>
       </section>
+      {item?.property_price && <MortgageCalculator propertyPrice={item.property_price} />}
       <TextSection />
       <CompanyInfo />
       <Tabbar />
