@@ -26,12 +26,10 @@ export default function Testimonials() {
                             width={135}
                         />
                         <p className="text-lg md:text-2xl text-gray mb-6 md:mb-12">
-                            Letraset sheets containing Lorem Ipsum passages and more recently
-                            with desktop publishing Various versions have evolved over the
-                            years, sometimes
+                            Working with Rajasiri was an absolute pleasure. Their expertise and dedication made finding our dream home in Toronto effortless. Highly recommend for anyone looking to buy or sell in the GTA!
                         </p>
-                        <p className="text-lg md:text-2xl">Stephanie Sue</p>
-                        <p className="text-gray text-lg md:text-xl">Designation</p>
+                        <p className="text-lg md:text-2xl text-midnight_text dark:text-white">Sarah M.</p>
+                        <p className="text-gray text-lg md:text-xl">Homeowner, Toronto</p>
                     </div>
                 </div>
             </div>

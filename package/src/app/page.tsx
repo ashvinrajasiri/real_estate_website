@@ -6,18 +6,17 @@ import History from './components/home/history';
 import Features from './components/shared/features';
 import CompanyInfo from './components/home/info';
 import BlogSmall from './components/shared/blog';
-import DiscoverProperties from './components/home/property-option';
 import Listing from './components/home/property-list';
 import Testimonials from './components/home/testimonial';
 export const metadata: Metadata = {
-  title: "Property",
+  title: "Rajasiri Sinnarajah | Toronto Real Estate Agent | GTA Homes",
+  description: "Looking for your dream home in the Greater Toronto Area? Rajasiri Sinnarajah offers 15+ years of experience helping clients buy and sell properties across the GTA.",
 };
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <DiscoverProperties />
       <Listing />
       <Calculator />
       <Features />
