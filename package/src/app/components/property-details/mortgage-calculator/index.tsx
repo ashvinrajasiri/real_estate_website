@@ -66,6 +66,28 @@ export default function MortgageCalculator({ propertyPrice }: MortgageCalculator
 
   return (
     <section className="dark:bg-darkmode py-16">
+      <style jsx>{`
+        input[type="range"]::-webkit-slider-thumb {
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: white;
+          cursor: pointer;
+          border: 3px solid #1d4ed8;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: white;
+          cursor: pointer;
+          border: 3px solid #1d4ed8;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+      `}</style>
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
         <div className="bg-gradient-to-br from-primary to-blue-700 rounded-xl p-8 shadow-xl" data-aos="fade-up">
           <div className="text-center mb-8">
