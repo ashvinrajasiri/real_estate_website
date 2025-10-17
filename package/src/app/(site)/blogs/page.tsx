@@ -5,21 +5,22 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Blog | Property-pro",
+    title: "Real Estate Blog | Market Insights & Home Buying Tips",
+    description: "Stay informed with the latest real estate market trends, home buying tips, and property investment insights for the Greater Toronto Area.",
 };
 
 const Blog = () => {
     const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     const breadcrumbLinks = [
         { href: "/", text: "Home" },
-        { href: "/blogs", text: "Blog List" },
+        { href: "/blogs", text: "Blog" },
     ];
 
     return (
         <>
             <HeroSub
-                title="Blog List"
-                description="Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+                title="Real Estate Insights"
+                description="Expert advice, market trends, and insider tips to help you navigate the GTA real estate market with confidence."
                 breadcrumbLinks={breadcrumbLinks}
             />
             <section className="flex flex-wrap justify-center dark:bg-darkmode px-4">

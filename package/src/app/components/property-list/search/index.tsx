@@ -92,8 +92,8 @@ export default function AdvanceSearch({ category }: { category?: string }) {
     return (
         <>
             <HeroSub
-                title={(filters?.category) ? filters?.category: "Properties List"}
-                description="Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+                title={(filters?.category) ? filters?.category: "Browse Properties"}
+                description={`Discover ${filteredCount} exceptional properties available in the Greater Toronto Area. Use our advanced filters to find your perfect home.`}
                 breadcrumbLinks={breadcrumbLinks}
             />
             <section className='dark:bg-darkmode px-4'>
