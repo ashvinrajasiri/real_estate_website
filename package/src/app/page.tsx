@@ -7,6 +7,8 @@ import CompanyInfo from './components/home/info';
 import BlogSmall from './components/shared/blog';
 import Listing from './components/home/property-list';
 import Testimonials from './components/home/testimonial';
+import ReviewSchema from './components/shared/ReviewSchema';
+
 export const metadata: Metadata = {
   title: "Rajasiri Sinnarajah | Toronto Real Estate Agent | GTA Homes",
   description: "Looking for your dream home in the Greater Toronto Area? Rajasiri Sinnarajah offers 15+ years of experience helping clients buy and sell properties across the GTA.",
@@ -14,14 +16,17 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Listing />
-      <Calculator />
-      <Features />
-      <Testimonials />
-      <CompanyInfo />
-      <BlogSmall />
-    </main>
+    <>
+      <ReviewSchema />
+      <main>
+        <Hero />
+        <Listing />
+        <Calculator />
+        <Features />
+        <Testimonials />
+        <CompanyInfo />
+        <BlogSmall />
+      </main>
+    </>
   )
 }

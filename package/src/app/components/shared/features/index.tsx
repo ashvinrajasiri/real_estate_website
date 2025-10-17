@@ -38,7 +38,7 @@ export default function Features() {
 
 
     return (
-        <section className='dark:bg-darkmode'>
+        <section className='bg-section dark:bg-darklight py-16 lg:py-24'>
             <div className="container px-4 lg:max-w-screen-xl md:max-w-screen-md mx-auto flex flex-col md:flex-row justify-between items-center">
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-8 justify-between">
                     <div className='mb-8 md:mb-0 flex-1'>
