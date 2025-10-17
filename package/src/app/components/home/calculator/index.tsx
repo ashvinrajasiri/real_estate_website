@@ -58,7 +58,7 @@ export default function Calculator() {
   };
 
   return (
-    <section className="dark:bg-darkmode">
+    <section className="bg-white dark:bg-darkmode py-16 lg:py-24">
       <style jsx>{`
         input[type="range"]::-webkit-slider-thumb {
           appearance: none;
