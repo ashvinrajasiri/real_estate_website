@@ -7,7 +7,7 @@ import { Blog } from "@/app/types/data/blog";
 const BlogCard: FC<{ blog: Blog }> = ({ blog }) => {
     const { title, coverImage, excerpt, date, slug } = blog;
     return (
-        <Link href={`/blogs/${slug}`} aria-label="blog cover 5xl:h-full 5xl:inline-block" className="flex gap-4 group">
+        <Link href={`/blogs/${slug}`} aria-label="blog cover 5xl:h-full 5xl:inline-block" className="flex gap-4 group" data-aos="fade-up">
             <div className="overflow-hidden rounded-lg flex-shrink-0 w-52 h-48">
                 <Image
                     src={coverImage!}
