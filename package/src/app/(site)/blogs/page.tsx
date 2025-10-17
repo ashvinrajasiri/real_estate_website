@@ -11,17 +11,12 @@ export const metadata: Metadata = {
 
 const Blog = () => {
     const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-    const breadcrumbLinks = [
-        { href: "/", text: "Home" },
-        { href: "/blogs", text: "Blog" },
-    ];
 
     return (
         <>
             <HeroSub
                 title="Real Estate Insights"
                 description="Expert advice, market trends, and insider tips to help you navigate the GTA real estate market with confidence."
-                breadcrumbLinks={breadcrumbLinks}
             />
             <section className="flex flex-wrap justify-center dark:bg-darkmode px-4">
                 <div className="container lg:max-w-screen-xl md:max-w-screen-md mx-auto ">

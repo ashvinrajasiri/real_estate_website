@@ -31,12 +31,6 @@ export default function AdvanceSearch({ category }: { category?: string }) {
         fetchData()
     }, [])
 
-    const breadcrumbLinks = [
-        { href: "/", text: "Home" },
-        { href: "/properties/properties-list", text: "Property List" },
-    ];
-
-
     const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPrice(Number(event.target.value));
     };
@@ -93,8 +87,7 @@ export default function AdvanceSearch({ category }: { category?: string }) {
         <>
             <HeroSub
                 title={(filters?.category) ? filters?.category: "Browse Properties"}
-                description={`Discover ${filteredCount} exceptional properties available in the Greater Toronto Area. Use our advanced filters to find your perfect home.`}
-                breadcrumbLinks={breadcrumbLinks}
+                description="Search for your dream home in the Greater Toronto Area. Use our advanced filters to narrow your options and find the perfect property."
             />
             <section className='dark:bg-darkmode px-4'>
                 <div className='lg:max-w-screen-xl max-w-screen-md mx-auto'>
