@@ -63,15 +63,26 @@ export default function AdvanceSearch({ category }: { category?: string }) {
         )
         : properties;
 
+    // Helper function to parse price strings like "$150,000" to numbers
+    const parsePrice = (priceString: string): number => {
+        return parseInt(priceString.replace(/[$,]/g, '')) || 0;
+    };
+
     // Sort logic
     const sortedProperties = [...filteredProperties].sort((a, b) => {
         const titleA = a.property_title?.toLowerCase() || "";
         const titleB = b.property_title?.toLowerCase() || "";
+        const priceA = parsePrice(a.property_price);
+        const priceB = parsePrice(b.property_price);
 
-        if (sortOrder === "asc") {
+        if (sortOrder === "title-asc") {
             return titleA.localeCompare(titleB);
-        } else if (sortOrder === "desc") {
+        } else if (sortOrder === "title-desc") {
             return titleB.localeCompare(titleA);
+        } else if (sortOrder === "price-asc") {
+            return priceA - priceB;
+        } else if (sortOrder === "price-desc") {
+            return priceB - priceA;
         }
         return 0; // no sort
     });
@@ -277,9 +288,11 @@ export default function AdvanceSearch({ category }: { category?: string }) {
                                         value={sortOrder}
                                         onChange={(e) => setSortOrder(e.target.value)}
                                     >
-                                        <option value="none">Sort by Title</option>
-                                        <option value="asc">Title (A-Z)</option>
-                                        <option value="desc">Title (Z-A)</option>
+                                        <option value="none">Default Order</option>
+                                        <option value="title-asc">Title (A-Z)</option>
+                                        <option value="title-desc">Title (Z-A)</option>
+                                        <option value="price-asc">Price (Low to High)</option>
+                                        <option value="price-desc">Price (High to Low)</option>
                                     </select>
 
                                     <button onClick={() => setViewMode('list')} className={`${viewMode == "list" ? 'bg-primary text-white' : 'bg-transparent text-primary'} p-3 border border-primary text-primary hover:text-white rounded-lg hover:bg-primary text-base`}>
