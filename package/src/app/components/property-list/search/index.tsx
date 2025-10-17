@@ -87,7 +87,7 @@ export default function AdvanceSearch({ category }: { category?: string }) {
         <>
             <HeroSub
                 title={(filters?.category) ? filters?.category: "Browse Properties"}
-                description="Search for your dream home in the Greater Toronto Area. Use our advanced filters to narrow your options and find the perfect property."
+                description="Your dream home in the GTA is waiting. Start your search today."
             />
             <section className='dark:bg-darkmode px-4'>
                 <div className='lg:max-w-screen-xl max-w-screen-md mx-auto'>
